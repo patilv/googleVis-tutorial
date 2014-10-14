@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GeoMapID206030a71f3a</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- GeoMap generated in R 3.1.1 by googleVis 0.5.5 package -->
+<!-- Mon Oct 13 15:01:50 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataGeoMapID206030a71f3a () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ 10.8,
+-35.5,
+25,
+"Tropical Depression" 
+],
+[
+ 11.2,
+-37.4,
+30,
+"Tropical Depression" 
+],
+[
+ 11.7,
+-39.6,
+30,
+"Tropical Depression" 
+],
+[
+ 12.3,
+-42,
+35,
+"Tropical Storm" 
+],
+[
+ 13.1,
+-44.2,
+35,
+"Tropical Storm" 
+],
+[
+ 13.6,
+-46.2,
+40,
+"Tropical Storm" 
+],
+[
+ 14.1,
+-48,
+45,
+"Tropical Storm" 
+],
+[
+ 14.6,
+-49.9,
+45,
+"Tropical Storm" 
+],
+[
+ 15.4,
+-51.8,
+45,
+"Tropical Storm" 
+],
+[
+ 16.3,
+-53.5,
+45,
+"Tropical Storm" 
+],
+[
+ 17.2,
+-55.3,
+45,
+"Tropical Storm" 
+],
+[
+ 18,
+-56.9,
+45,
+"Tropical Storm" 
+],
+[
+ 18.8,
+-58.3,
+45,
+"Tropical Storm" 
+],
+[
+ 19.8,
+-59.3,
+40,
+"Tropical Storm" 
+],
+[
+ 20.7,
+-60,
+40,
+"Tropical Storm" 
+],
+[
+ 21.7,
+-60.7,
+40,
+"Tropical Storm" 
+],
+[
+ 22.5,
+-61.5,
+40,
+"Tropical Storm" 
+],
+[
+ 23.2,
+-62.4,
+45,
+"Tropical Storm" 
+],
+[
+ 23.9,
+-63.3,
+45,
+"Tropical Storm" 
+],
+[
+ 24.4,
+-64.2,
+50,
+"Tropical Storm" 
+],
+[
+ 24.8,
+-64.9,
+50,
+"Tropical Storm" 
+],
+[
+ 25.3,
+-65.9,
+55,
+"Tropical Storm" 
+],
+[
+ 25.6,
+-67,
+60,
+"Tropical Storm" 
+],
+[
+ 25.8,
+-68.3,
+70,
+"Hurricane" 
+],
+[
+ 25.7,
+-69.7,
+80,
+"Hurricane" 
+],
+[
+ 25.6,
+-71.1,
+90,
+"Hurricane" 
+],
+[
+ 25.5,
+-72.5,
+105,
+"Hurricane" 
+],
+[
+ 25.4,
+-74.2,
+120,
+"Hurricane" 
+],
+[
+ 25.4,
+-75.8,
+135,
+"Hurricane" 
+],
+[
+ 25.4,
+-77.5,
+125,
+"Hurricane" 
+],
+[
+ 25.4,
+-79.3,
+120,
+"Hurricane" 
+],
+[
+ 25.6,
+-81.2,
+110,
+"Hurricane" 
+],
+[
+ 25.8,
+-83.1,
+115,
+"Hurricane" 
+],
+[
+ 26.2,
+-85,
+115,
+"Hurricane" 
+],
+[
+ 26.6,
+-86.7,
+115,
+"Hurricane" 
+],
+[
+ 27.2,
+-88.2,
+115,
+"Hurricane" 
+],
+[
+ 27.8,
+-89.6,
+120,
+"Hurricane" 
+],
+[
+ 28.5,
+-90.5,
+120,
+"Hurricane" 
+],
+[
+ 29.2,
+-91.3,
+115,
+"Hurricane" 
+],
+[
+ 30.1,
+-91.7,
+80,
+"Tropical Storm" 
+],
+[
+ 30.9,
+-91.6,
+50,
+"Tropical Storm" 
+],
+[
+ 31.5,
+-91.1,
+35,
+"Tropical Depression" 
+],
+[
+ 32.1,
+-90.5,
+30,
+"Tropical Depression" 
+],
+[
+ 32.8,
+-89.6,
+30,
+"Tropical Depression" 
+],
+[
+ 33.6,
+-88.4,
+25,
+"Tropical Depression" 
+],
+[
+ 34.4,
+-86.7,
+20,
+"Tropical Depression" 
+],
+[
+ 35.4,
+-84,
+20,
+"Tropical Depression" 
+] 
+];
+data.addColumn('number','Latitude');
+data.addColumn('number','Longitude');
+data.addColumn('number','Speed_kt');
+data.addColumn('string','Category');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartGeoMapID206030a71f3a() {
+var data = gvisDataGeoMapID206030a71f3a();
+var options = {};
+options["dataMode"] = "markers";
+options["width"] =    556;
+options["height"] =    350;
+options["region"] = "US";
+
+
+    var chart = new google.visualization.GeoMap(
+    document.getElementById('GeoMapID206030a71f3a')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geomap";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoMapID206030a71f3a);
+})();
+function displayChartGeoMapID206030a71f3a() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoMapID206030a71f3a"></script>
+ 
+<!-- divChart -->
+  
+<div id="GeoMapID206030a71f3a" 
+  style="width: 556; height: 350;">
+</div>
+ <div><span>Data: Andrew &#8226; Chart ID: <a href="Chart_GeoMapID206030a71f3a.html">GeoMapID206030a71f3a</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.5</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.1.1 (2014-07-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/geomap">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>

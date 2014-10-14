@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>AnnotationChartID2060666f457b</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- AnnotationChart generated in R 3.1.1 by googleVis 0.5.5 package -->
+<!-- Mon Oct 13 15:01:49 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataAnnotationChartID2060666f457b () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ new Date(2008,0,1),
+3000,
+null,
+null,
+40645,
+null,
+null 
+],
+[
+ new Date(2008,0,2),
+14045,
+null,
+null,
+20374,
+null,
+null 
+],
+[
+ new Date(2008,0,3),
+5502,
+null,
+null,
+50766,
+null,
+null 
+],
+[
+ new Date(2008,0,4),
+75284,
+null,
+null,
+14334,
+"Out of stock",
+"Ran out of stock of pens at 4pm" 
+],
+[
+ new Date(2008,0,5),
+41476,
+"Bought pencils",
+"Bought 200k pencils",
+66467,
+null,
+null 
+],
+[
+ new Date(2008,0,6),
+333222,
+null,
+null,
+39463,
+null,
+null 
+] 
+];
+data.addColumn('date','Date');
+data.addColumn('number','Pencils');
+data.addColumn('string','Title.Pencils');
+data.addColumn('string','Annotation.Pencils');
+data.addColumn('number','Pens');
+data.addColumn('string','Title.Pens');
+data.addColumn('string','Annotation.Pens');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartAnnotationChartID2060666f457b() {
+var data = gvisDataAnnotationChartID2060666f457b();
+var options = {};
+options["width"] =    750;
+options["height"] =    400;
+options["fill"] =     10;
+options["displayExactValues"] = true;
+options["colors"] = ['#0000ff','#00ff00'];
+
+
+    var chart = new google.visualization.AnnotationChart(
+    document.getElementById('AnnotationChartID2060666f457b')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "annotationchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartAnnotationChartID2060666f457b);
+})();
+function displayChartAnnotationChartID2060666f457b() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartAnnotationChartID2060666f457b"></script>
+ 
+<!-- divChart -->
+  
+<div id="AnnotationChartID2060666f457b" 
+  style="width: 750; height: 400;">
+</div>
+ <div><span>Data: Stock &#8226; Chart ID: <a href="Chart_AnnotationChartID2060666f457b.html">AnnotationChartID2060666f457b</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.5</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.1.1 (2014-07-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/annotationchart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>

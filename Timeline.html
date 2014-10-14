@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TimelineID206077e82ea</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- Timeline generated in R 3.1.1 by googleVis 0.5.5 package -->
+<!-- Mon Oct 13 15:01:50 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataTimelineID206077e82ea () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Washington",
+"President",
+new Date(1789,2,29),
+new Date(1797,1,3) 
+],
+[
+ "Adams",
+"President",
+new Date(1797,1,3),
+new Date(1801,1,3) 
+],
+[
+ "Jefferson",
+"President",
+new Date(1801,1,3),
+new Date(1809,1,3) 
+],
+[
+ "Adams",
+"Vice",
+new Date(1789,2,29),
+new Date(1797,1,3) 
+],
+[
+ "Jefferson",
+"Vice",
+new Date(1797,1,3),
+new Date(1801,1,3) 
+],
+[
+ "Burr",
+"Vice",
+new Date(1801,1,3),
+new Date(1809,1,3) 
+] 
+];
+data.addColumn('string','Name');
+data.addColumn('string','Position');
+data.addColumn('date','start');
+data.addColumn('date','end');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartTimelineID206077e82ea() {
+var data = gvisDataTimelineID206077e82ea();
+var options = {};
+options["width"] =    600;
+options["height"] =    350;
+options["timeline"] = {groupByRowLabel:false};
+options["backgroundColor"] = "#ffd";
+options["colors"] = ['#cbb69d', '#603913', '#c69c6e'];
+
+
+    var chart = new google.visualization.Timeline(
+    document.getElementById('TimelineID206077e82ea')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "timeline";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTimelineID206077e82ea);
+})();
+function displayChartTimelineID206077e82ea() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID206077e82ea"></script>
+ 
+<!-- divChart -->
+  
+<div id="TimelineID206077e82ea" 
+  style="width: 600; height: 350;">
+</div>
+ <div><span>Data: datTL &#8226; Chart ID: <a href="Chart_TimelineID206077e82ea.html">TimelineID206077e82ea</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.5</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.1.1 (2014-07-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/timeline">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
