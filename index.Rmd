@@ -83,7 +83,7 @@ M <- gvisMotionChart(data, idvar='id', timevar='date',
 
 ## Types of charts 
 
-* Histogram, Line, Line with two axes, Bar, Column, Area, Stepped Area, Combo, Scatter, Bubble, Motion, Candlestick, Pie, Gauge, Table, Organization Chart, Tree Map, Annotation, Annotated time line, Sankey, Calendar, and Time line  
+* Histogram, Line, Line with two axes, Bar, Column, Area, Stepped Area, Combo, Scatter, Bubble, Motion, Candlestick, Pie, Gauge, Table, Organization Chart, Tree Map, Sankey, Calendar, and Time line (to check on Annotation, Annotated time line) 
 * Mapping: Intensity Map, Geo Chart, Geo markers, Google map markers,Geo Map 
 
 Run ```demo(googleVis)``` to see [examples](http://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html) of all charts and read the [vignette](http://cran.r-project.org/web/packages/googleVis/vignettes/googleVis.pdf) for more details.
@@ -360,50 +360,6 @@ Tree <- gvisTreeMap(Regions,
                     options=list(fontSize=16))
 plot(Tree)
 ```
-
----
-## Annotation chart
-
-```{r results='asis'}
-Anno <- gvisAnnotationChart(Stock, 
-                            datevar="Date",
-                            numvar="Value", 
-                            idvar="Device",
-                            titlevar="Title", 
-                            annotationvar="Annotation",
-                            options=list(
-                              width=750, height=400,
-                              fill=10, displayExactValues=TRUE,
-                              colors="['#0000ff','#00ff00']")
-)
-print(Anno,file="Anno.html")
-```
-
----
-## Annotation chart
-
-<iframe src="Anno.html" width="600" height="600"></iframe>
-
----
-## Annotated time line chart
-
-```{r results='asis'}
-AnnoTimeLine  <- gvisAnnotatedTimeLine(Stock, 
-                                       datevar="Date",
-                                       numvar="Value", 
-                                       idvar="Device",
-                                       titlevar="Title", 
-                                       annotationvar="Annotation",
-                                       options=list(displayAnnotations=TRUE,
-                                                    width=750, height=400))
-print(AnnoTimeLine,file="AnnoTimeLine.html")
-```
-
----
-
-## Annotated time line chart
-
-<iframe src="AnnoTimeLine.html" width="600" height="600"></iframe>
 
 ---
 ## Sankey chart
