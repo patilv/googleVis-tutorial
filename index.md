@@ -4940,3 +4940,6 @@ print(GT,file="GT.html")
 ---
 
 ## Your turn to have fun!!
+
+Code for this deck can be found at: https://github.com/patilv/googleVis-tutorial
+
